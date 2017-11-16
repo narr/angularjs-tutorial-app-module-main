@@ -30,6 +30,8 @@ function PhoneMainController(
   function init() {
     vm.onPhoneListImgClick = onPhoneListImgClick;
     vm.onPhoneListNameClick = onPhoneListNameClick;
+    vm.onPhoneSearchChange = onPhoneSearchChange;
+    vm.onPhoneSelectChange = onPhoneSelectChange;
 
     vm.phoneListOrderBy = 'age';
 
@@ -60,6 +62,14 @@ function PhoneMainController(
     $scope.$on('$routeChangeStart', function ($event, next, current) {
       vm.phoneId = next.params.phoneId;
     });
+  }
+
+  function onPhoneSearchChange(search) {
+    vm.phoneMainFilterQuery = search;
+  }
+
+  function onPhoneSelectChange(sort) {
+    vm.phoneListOrderBy = sort;
   }
 
 }

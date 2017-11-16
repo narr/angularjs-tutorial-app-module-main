@@ -7,4 +7,5 @@ angular.module('phonecatApp.phoneMain', [
   'ngRoute',
   'phonecatApp.template',
   'phonecatApp.phoneList',
+  'phonecatApp.phoneSearch',
 ]);

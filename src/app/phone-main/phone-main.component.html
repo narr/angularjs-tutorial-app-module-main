@@ -1,22 +1,15 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-2">
-      <p>
-        Search:
-        <input ng-model="phoneMainVm.phoneMainFilterQuery">
-      </p>
-      <p>
-        Sort by:
-        <select ng-model="phoneMainVm.phoneMainOrderBy">
-          <option value="name">Alphabetical</option>
-          <option value="age">Newest</option>
-        </select>
-      </p>
+      <phone-search selected-order="{{phoneMainVm.phoneListOrderBy}}"
+        on-search-change="phoneMainVm.onPhoneSearchChange(search)"
+        on-select-change="phoneMainVm.onPhoneSelectChange(sort)">
+      </phone-search>
     </div>
     <div class="col-md-10">
       <phone-list phone-list-url="/json/phones.json"
         phone-list-filter-query="phoneMainVm.phoneMainFilterQuery"
-        phone-list-order-by="phoneMainVm.phoneMainOrderBy"
+        phone-list-order-by="phoneMainVm.phoneListOrderBy"
         on-img-click="phoneMainVm.onPhoneListImgClick(id)"
         on-name-click="phoneMainVm.onPhoneListNameClick(id)">
       </phone-list>
