@@ -2,14 +2,30 @@
   "name": "angularjs-tutorial-app-module-main",
   "version": "0.0.0",
   "dependencies": {
-    "angularjs-tutorial-app-module-1": "git+https://narr@github.com/narr/angularjs-tutorial-app-module-1.git#master"
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angularjs-tutorial-app-module-1": "git+https://narr@github.com/narr/angularjs-tutorial-app-module-1.git#master",
+    "bootstrap-sass": "^3.3.7"
   },
   "devDependencies": {
+    "css-loader": "^0.28.7",
     "eslint": "^4.11.0",
+    "file-loader": "^1.1.5",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
     "htmlhint": "^0.9.13",
+    "ngtemplate-loader": "^2.0.1",
+    "node-sass": "^4.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
     "stylelint": "^8.2.0",
     "stylelint-config-sass-guidelines": "^3.1.0",
-    "stylelint-config-standard": "^17.0.0"
+    "stylelint-config-standard": "^17.0.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config ./config/webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
