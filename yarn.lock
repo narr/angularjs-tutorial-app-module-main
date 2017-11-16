@@ -87,11 +87,22 @@ angular@^1.6.6:
 
 "angularjs-tutorial-app-module-1@git+https://narr@github.com/narr/angularjs-tutorial-app-module-1.git#master":
   version "0.0.0"
-  resolved "git+https://narr@github.com/narr/angularjs-tutorial-app-module-1.git#ec3300823eaeeee25f5475fa8607b3378c7a6937"
+  resolved "git+https://narr@github.com/narr/angularjs-tutorial-app-module-1.git#d9fe9ddc64b662649ac78d47a3d9970432849d7a"
   dependencies:
     angular "^1.6.6"
     angular-animate "^1.6.6"
     bootstrap-sass "^3.3.7"
+
+"angularjs-tutorial-app-module-2@git+https://narr@github.com/narr/angularjs-tutorial-app-module-2.git#master":
+  version "0.0.0"
+  resolved "git+https://narr@github.com/narr/angularjs-tutorial-app-module-2.git#89fd5fb2ba429b202b0385f2406083327d9702e9"
+  dependencies:
+    angular "^1.6.6"
+    bootstrap-sass "^3.3.7"
+
+"angularjs-tutorial-app-module-3@git+https://narr@github.com/narr/angularjs-tutorial-app-module-3.git#master":
+  version "0.0.0"
+  resolved "git+https://narr@github.com/narr/angularjs-tutorial-app-module-3.git#e110b475a81beec3941513758412855584d2ef03"
 
 ansi-escapes@^3.0.0:
   version "3.0.0"
