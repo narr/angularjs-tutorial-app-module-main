@@ -21,21 +21,8 @@ function PhonecatAppController($element) {
   vm.$onInit = init;
   vm.$postLink = postLink;
 
-  function init() {
-    vm.onPhoneListImgClick = onPhoneListImgClick;
-    vm.onPhoneListNameClick = onPhoneListNameClick;
-
-    vm.phoneListOrderBy = 'age';
-  }
+  function init() {}
 
   function postLink() {}
-
-  function onPhoneListImgClick(id) {
-    console.log(id); // eslint-disable-line no-console
-  }
-
-  function onPhoneListNameClick(id) {
-    console.log(id); // eslint-disable-line no-console
-  }
 
 }

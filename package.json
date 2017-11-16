@@ -4,6 +4,7 @@
   "dependencies": {
     "angular": "^1.6.6",
     "angular-animate": "^1.6.6",
+    "angular-route": "^1.6.6",
     "angularjs-tutorial-app-module-1": "git+https://narr@github.com/narr/angularjs-tutorial-app-module-1.git#master",
     "bootstrap-sass": "^3.3.7"
   },

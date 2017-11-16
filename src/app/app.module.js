@@ -4,5 +4,5 @@ import angular from 'angular';
 
 angular.module('phonecatApp', [
   'phonecatApp.template',
-  'phonecatApp.phoneList',
+  'phonecatApp.phoneMain',
 ]);
