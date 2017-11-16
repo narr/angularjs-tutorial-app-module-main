@@ -6,7 +6,7 @@ angular.module('phonecatApp.phoneMain')
   .component('phoneMain', {
     controller: PhoneMainController,
     controllerAs: 'phoneMainVm',
-    template: '<div ng-view></div>',
+    template: '<div class="view-container"><div ng-view class="view-frame"></div></div>',
   });
 
 

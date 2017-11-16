@@ -8,3 +8,4 @@ import './src/app/phone-main/phone-main.module';
 import './src/app/phone-main/phone-main.route';
 import './src/app/phone-main/phone-main.component';
 import './src/app/phone-main/phone-main.component.html';
+import './src/app/phone-main/phone-main.component.scss';

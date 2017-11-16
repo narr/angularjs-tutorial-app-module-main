@@ -1,0 +1,44 @@
+phone-main {
+  .view-container {
+    position: relative;
+  }
+
+  .view-frame.ng-enter,
+  .view-frame.ng-leave {
+    background: #fff;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .view-frame.ng-enter {
+    animation: 1s phone-main_fade-in;
+    z-index: 100;
+  }
+
+  .view-frame.ng-leave {
+    animation: 1s phone-main_fade-out;
+    z-index: 99;
+  }
+}
+
+@keyframes phone-main_fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes phone-main_fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
