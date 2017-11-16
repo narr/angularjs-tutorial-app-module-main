@@ -13,11 +13,13 @@ angular.module('phonecatApp.phoneMain')
 PhoneMainController.$inject = [
   '$element',
   '$location',
+  '$scope',
 ];
 
 function PhoneMainController(
   $element,
-  $location
+  $location,
+  $scope
 ) {
 
   const vm = this;
@@ -30,16 +32,21 @@ function PhoneMainController(
     vm.onPhoneListNameClick = onPhoneListNameClick;
 
     vm.phoneListOrderBy = 'age';
+
+    addRouteChangeWatcher();
   }
 
   function postLink() { }
 
   function onPhoneListImgClick(id) {
-    console.log(id); // eslint-disable-line no-console
-    setPath('/' + id);
+    handlePhoneListItemClick(id);
   }
 
   function onPhoneListNameClick(id) {
+    handlePhoneListItemClick(id);
+  }
+
+  function handlePhoneListItemClick(id) {
     console.log(id); // eslint-disable-line no-console
     setPath('/' + id);
   }
@@ -47,6 +54,12 @@ function PhoneMainController(
   function setPath(path) {
     var currentPath = $location.path();
     $location.path(currentPath + path);
+  }
+
+  function addRouteChangeWatcher() {
+    $scope.$on('$routeChangeStart', function ($event, next, current) {
+      vm.phoneId = next.params.phoneId;
+    });
   }
 
 }
