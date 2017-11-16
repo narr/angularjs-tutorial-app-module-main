@@ -1,0 +1,19 @@
+{
+  "name": "angularjs-tutorial-app-module-main",
+  "version": "0.0.0",
+  "dependencies": {
+    "angularjs-tutorial-app-module-1": "git+https://narr@github.com/narr/angularjs-tutorial-app-module-1.git#master"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "htmlhint": "^0.9.13",
+    "stylelint": "^8.2.0",
+    "stylelint-config-sass-guidelines": "^3.1.0",
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/narr/angularjs-tutorial-app-module-main.git"
+  },
+  "private": true
+}
