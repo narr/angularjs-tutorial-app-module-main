@@ -1,6 +1,6 @@
 # angularjs-tutorial-app-module-main
 
-## Main module of PhoneCat Tutorial App
+## main module of PhoneCat Tutorial App
 
 ### This has dependencies of
 
