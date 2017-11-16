@@ -12,7 +12,8 @@ function webpackConfig() {
     entry: {
       vendor: './lib/vendor.js',
       main: [
-        './src/main.js', // bootstrap files
+        './src/main.js', // bootstrap files,
+        // 'angularjs-tutorial-app-module-1/phone-list', // node_module
       ],
       app: [
         './src/app/app.module.js',
