@@ -22,7 +22,7 @@ function routeConfig(
       templateUrl: 'phone-main.component.html',
     }).
     when('/phones/:phoneId', {
-      template: 'WIP {{phoneMainVm.phoneId}}',
+      template: '<phone-detail phone-id="{{phoneMainVm.phoneId}}"></phone-detail>',
     }).
     otherwise('/phones');
 }

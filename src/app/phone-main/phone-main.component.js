@@ -49,7 +49,6 @@ function PhoneMainController(
   }
 
   function handlePhoneListItemClick(id) {
-    console.log(id); // eslint-disable-line no-console
     setPath('/' + id);
   }
 
